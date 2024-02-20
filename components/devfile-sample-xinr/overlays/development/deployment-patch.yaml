@@ -1,0 +1,18 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: devfile-sample-xinr
+spec:
+  replicas: 1
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/pmacik-testing/tkrw-pr712-0075-0043-tenant/tkrw-pr712-0075-0043-app/devfile-sample-xinr@sha256:08880c7b6f8eb42ea6351fee445b5406b916b2779d7c74181b09df854908636b
+        name: my-nodejs
+        resources: {}
+status: {}
